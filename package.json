@@ -1,0 +1,24 @@
+{
+  "name": "alura",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "setup/*",
+      "packages/*",
+      "projects/*"
+    ]
+  },
+  "scripts": {
+    "web-public": "yarn workspace @alura/web-public",
+    "dev:web-public": "yarn web-public dev",
+    "design-system": "yarn workspace @alura/design-system"
+  },
+  "dependencies": {
+    "@types/styled-components": "5.1.26",
+    "@types/node": "18.11.10",
+    "@types/react": "18.0.26",
+    "typescript": "4.9.3"
+  }
+}
